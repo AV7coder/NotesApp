@@ -1,0 +1,55 @@
+{%extends 'main.html'%} {%block title%}
+<title>Free Ink - About Page</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}"> {%endblock title%} {%block body%}
+<br>
+<div class="jumbotron">
+    <h1 class="display-4">About Us</h1>
+    <p class="lead">This is an open-source notes taking web based app.</p>
+    <hr class="my-4">
+    <h4>Advantages of our app-</h4>
+    <ul>
+        <li>Easy to use.</li>
+        <li>Respects privacy</li>
+        <li>Open Source</li>
+    </ul>
+    <h3>The perfect notes</h3>
+    <ol>
+        <li>Date your notes and make the main topic visible.</li>
+        <li>Don't write everything down – write down the important points.</li>
+        <li>Make short notes of the examples given.</li>
+    </ol>
+    <h4>Why to take notes for education?</h4>
+    <ul>
+        <li>Students who take notes during a lesson achieve more than those who listen to the lesson without note taking.</li>
+        <a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/AV7coder/NotesApp" role="button">Source Code</a>
+</div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <picture>
+                    <source srcset="...">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                </picture>
+                <h5 class="card-title">Rishabh Keshri</h5>
+                <p class="card-text">Programmer</p>
+                <a href="https://github.com/Rishab1804" target="_blank" class="btn btn-primary">Github</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <picture>
+                    <source>
+                    <img class="aaditya" src="{{url_for('static', filename='assets/aaditya.jpg')}}" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+                <h5 class="card-title">Aaditya Vyas</h5>
+                <p class="card-text">Programmer</p>
+                <a href="https://github.com/AV7coder" target="_blank" class="btn btn-primary">Github</a>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock body%}
