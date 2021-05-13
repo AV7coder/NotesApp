@@ -1,0 +1,38 @@
+{% extends 'main.html' %} {% block title %}
+<title>Free Ink- Register</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/registerlogin.css')}}"> {% endblock title %} {% block body %}
+<div class="conatiner">
+    <h1 class="text-center">
+        Free Ink- Register yourself with us.
+    </h1>
+    <form action='/register' method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">First Name</label>
+                <input name='fname' type="text" class="form-control" id="inputAddress2" placeholder="Hello">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Last Name</label>
+                <input name='lname' type="text" class="form-control" id="inputCity" placeholder="World">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Username</label>
+                <input type="text" name="username" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input name='password' type="password" class="form-control" id="inputPassword4" placeholder="MyPassword123#88">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Email</label>
+            <input name='email' type="text" class="form-control" id="inputAddress" placeholder="sample@gmail.com">
+        </div>
+
+        <button type="submit" class="btn btn-dark">Sign Up</button>
+    </form>
+    <br><br><br><br><b><br><br><br></b> {% endblock body%}

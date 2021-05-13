@@ -1,0 +1,30 @@
+.d-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    color: rgb(94, 6, 0)
+}
+
+a {
+    color: white
+}
+
+a:hover {
+    color: rgb(4, 14, 100);
+}
+
+h5 {
+    color: black
+}
+
+p {
+    color: rgb(92, 7, 56)
+}
+
+span {
+    color: black
+}

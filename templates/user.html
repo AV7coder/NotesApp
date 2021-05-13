@@ -1,0 +1,5 @@
+{%extends 'main.html'%} {%block title%}
+<title>Free Ink -{{current_user.username}}</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/user.css')}}"> {%endblock title%} {%block body%}
+<h1 class="text-center">Free Ink - {{current_user.username}}</h1>
+<a href="/danger"><button class="btn btn-danger">Danger Zone</button></a> {%endblock body%}

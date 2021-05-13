@@ -1,0 +1,15 @@
+{%extends 'main.html'%} {%block title%}
+<title>Free Ink -{{current_user.username}} Danger Zone</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/danger.css')}}"> {%endblock title%} {%block body%}
+<h1 class="text-center">Free Ink - {{current_user.username}}</h1>
+<div class="border border-dark">
+    <br>
+    <a href="/delete">&nbsp;<button class="btn btn-danger">Delete Account</button></a>
+    <p>&nbsp;&nbsp;&nbsp;If you want to quit taking notes press the button.
+    </p>
+    <hr>
+    <a href="/changepassword">&nbsp;<button class="btn btn-warning">Change Password</button></a>
+    <p>&nbsp;&nbsp;&nbsp;If you have forgotten your password or want to change it kindly press the button.
+    </p>
+    <br>
+</div>{%endblock body%}
